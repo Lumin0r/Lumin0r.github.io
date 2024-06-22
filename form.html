@@ -31,14 +31,14 @@
         vkl.style.display = "none";
         forma.style.display = "none";
     }
-    function minD() {
+    function minD(a, b) {
   //   if(_i1.value<_i2.value)
   //          alert(_i1.value);
   //     if(_i2.value<_i1.value)
   //           alert(_i2.value);
   //      if(_i2.value==_i1.value)
   //          alert("Они равны");
-        let res = _i1.value+_i2.value;
+        let res = a+b;
         alert(res);
 
     }
@@ -84,8 +84,8 @@
     <div id="setForm" onclick="SetForm()">Индвидуалка</div>
     <div id="forma">
         <h1>Задание №1</h1>
-        <input type="text" size="40" onchange="Check()" id = "_i1">
-        <input type="text" size="40" onchange="Check()" id = "_i2">
+        <input type="text" size="40" onchange="Check()" id = "a">
+        <input type="text" size="40" onchange="Check()" id = "b">
         <input type="submit" class="button" value="Получить минимальное" onclick="minD()">
         <h1>Задание №2</h1>
         <input type="submit" class="button" value="Твое имя" onclick="sayMyName()">
